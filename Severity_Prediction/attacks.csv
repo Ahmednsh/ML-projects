@@ -1,0 +1,201 @@
+TimeGenerated,attack_type,severity,source_ip,dest_ip,source_port,dest_port,protocol,ports_scanned,username,password,http_path,payload,latitude,longitude,note
+2025-10-31T07:52:00.983303Z,web_xss,78,107.39.156.167,65.111.159.52,49389,443,TCP,0,webadmin167,P@ssw0rd,/checkout?q=test,<script>alert(1)</script>,-48.314798,84.974467,XSS attempt
+2025-10-27T02:47:23.983303Z,ssh_bruteforce,70,234.213.171.93,36.41.16.170,34280,22,TCP,0,root,pass,/login,ssh_attempt,-5.898837,-112.60123,multiple failures
+2025-10-11T02:39:30.983303Z,web_abnormal_request,68,228.20.83.243,239.108.153.223,53955,443,HTTP,0,guest243,P@ssw0rd,/weird2,/big-request?size=999999999,-11.501946,-144.754735,Abnormal request pattern
+2025-10-13T20:42:25.983303Z,ssh_bruteforce,77,213.251.230.141,33.11.81.232,17822,22,TCP,0,root,1234,/login,ssh_attempt,-48.422167,121.816641,failed login
+2025-10-21T00:22:00.983303Z,web_file_upload,83,234.135.157.183,55.115.159.215,35000,443,TCP,0,svc183,Welcome1!,/upload,/upload.php?file=malware.php,9.326348,101.00414,Suspicious file upload
+2025-10-29T00:39:06.983303Z,web_sql_injection,100,12.119.222.203,209.204.183.29,36664,80,HTTP,0,admin203,letmein2024,/checkout?id=1,' OR '1'='1,4.167017,62.564549,SQL injection payload detected
+2025-10-15T07:16:12.983303Z,recon_scan,35,118.29.150.187,65.36.240.93,12996,0,TCP,25;110,user187,S3cure#57,/upload,scan_probe,-59.457105,-116.700413,scan detected
+2025-10-04T00:24:01.983303Z,web_abnormal_request,68,25.181.85.221,93.180.189.92,37606,443,TCP,0,ubuntu221,qwerty!23,/weird99,/big-request?size=999999999,14.055356,-126.483098,Abnormal request pattern
+2025-10-28T05:35:28.983303Z,recon_scan,40,14.24.183.50,220.191.251.62,5133,0,UDP,8080;143;25;110;3389,svc50,qwerty!23,/search?q=test,scan_probe,-6.365932,-43.17181,zmap result
+2025-10-08T01:02:18.983303Z,web_path_traversal,68,92.229.210.54,119.119.66.5,43892,443,HTTP,0,svc54,letmein2024,/view?file=../../../../etc/passwd,../../../../etc/passwd,65.813895,158.38522,Directory traversal attempt
+2025-10-05T09:55:34.983303Z,ssh_bruteforce,77,216.191.111.128,66.17.231.114,64906,22,TCP,0,admin,letmein,/admin,ssh_attempt,-56.638494,56.296244,failed login
+2025-10-24T02:13:41.983303Z,port_scan,40,151.202.246.160,114.137.135.24,39673,0,TCP,22;139;143,root160,S3cure#56,/admin,scan_probe,31.690165,-131.344022,scan detected
+2025-10-04T01:57:14.983303Z,ssh_bruteforce,70,51.47.181.234,133.178.34.117,57317,22,TCP,0,root,letmein,/admin,ssh_attempt,12.685478,-13.044923,multiple failures
+2025-10-18T11:59:21.983303Z,web_path_traversal,68,191.69.98.167,39.29.128.163,19487,80,TCP,0,admin167,Passw0rd!,/view?file=../..//etc/shadow,../..//etc/shadow,1.969977,-133.016304,Directory traversal attempt
+2025-10-28T02:39:57.983303Z,web_unauthorized_access,88,242.76.185.34,156.170.212.155,52132,80,TCP,0,webadmin34,Passw0rd!,/admin?role=admin,/admin?role=admin,65.773267,68.981668,Auth bypass pattern
+2025-10-18T19:41:37.983303Z,port_scan,40,216.209.173.252,3.30.203.81,9781,0,UDP,3389;139;25,root252,Admin123!,/index.php,scan_probe,28.740304,136.802606,mass scan
+2025-10-05T13:46:11.983303Z,web_request_smuggling,68,236.209.64.104,84.69.36.152,2005,80,TCP,0,admin104,Passw0rd!,/,SMUGGLE_PAYLOAD,-52.530574,-136.769038,Request smuggling pattern
+2025-10-23T14:51:33.983303Z,web_file_upload,83,78.239.189.217,195.247.129.17,29983,443,HTTP,0,ubuntu217,Welcome1!,/upload,/upload.php?file=malware.php,-32.187124,84.792292,Suspicious file upload
+2025-10-15T16:43:05.983303Z,web_path_traversal,68,72.136.157.100,54.227.140.223,11427,443,HTTP,0,root100,P@ssw0rd,/view?file=../../../../etc/passwd,../../../../etc/passwd,48.137447,171.591959,Directory traversal attempt
+2025-10-07T08:58:52.983303Z,ssh_bruteforce,77,183.50.214.205,238.200.73.135,53429,22,TCP,0,user,1234,/admin,ssh_attempt,-23.870777,165.727358,failed login
+2025-10-05T13:38:02.983303Z,web_xss,73,197.147.43.222,98.182.93.224,61023,443,HTTP,0,ubuntu222,P@ssw0rd,/admin?q=test,<img src=x onerror=alert(1)>,27.816558,-33.604943,XSS attempt
+2025-10-30T02:55:07.983303Z,mass_scan,40,149.82.88.156,45.2.123.209,32933,0,TCP,25;22;443,ubuntu156,S3cure#65,/search?q=test,scan_probe,-7.429566,-35.489196,scan detected
+2025-10-06T05:41:38.983303Z,web_file_upload,83,14.97.133.150,92.194.52.44,3478,80,TCP,0,svc150,changeme2024,/upload,/upload.php - multipart with php payload,40.105195,47.201709,Suspicious file upload
+2025-10-24T20:54:15.983303Z,web_xss,73,118.177.225.24,73.59.3.83,24275,80,TCP,0,admin24,P@ssw0rd,/index.php?q=test,<img src=x onerror=alert(1)>,43.080088,123.874336,XSS attempt
+2025-10-17T16:59:38.983303Z,web_unauthorized_access,88,33.68.96.48,171.216.141.171,7255,80,TCP,0,root48,Passw0rd!,/login?user=admin&pass=,/login?user=admin&pass=,-25.304427,75.604595,Auth bypass pattern
+2025-10-16T21:01:21.983303Z,ssh_bruteforce,77,41.36.69.67,201.34.94.184,64087,22,TCP,0,admin,letmein,/checkout,ssh_attempt,41.107992,53.80443,failed login
+2025-10-05T19:57:16.983303Z,port_scan,40,240.154.112.221,223.122.21.85,39894,0,UDP,5900;21;143;21;53,admin221,Welcome1!,/api/v1/login,scan_probe,60.095248,-161.663705,zmap result
+2025-10-30T06:44:23.983303Z,web_file_upload,83,164.154.227.83,215.83.167.229,16249,443,TCP,0,ubuntu83,changeme2024,/upload,/upload.php?file=malware.php,-1.493272,63.172511,Suspicious file upload
+2025-10-06T16:43:06.983303Z,port_scan,40,97.58.95.126,228.179.123.224,59884,0,UDP,53;445;25;8080;110;143,svc126,P@ssw0rd,/search?q=test,scan_probe,-14.58779,166.007806,mass scan
+2025-10-03T07:12:46.983303Z,ssh_bruteforce,70,246.225.111.250,14.91.230.97,30173,22,TCP,0,admin,1234,/admin,ssh_attempt,-41.50403,138.633608,multiple failures
+2025-10-11T11:31:01.983303Z,web_file_upload,83,140.11.141.32,45.20.20.242,45226,80,HTTP,0,svc32,Admin123!,/upload,/upload.php?file=malware.php,-15.082959,-51.733345,Suspicious file upload
+2025-10-13T09:22:28.983303Z,recon_scan,40,113.148.136.119,186.254.149.89,20136,0,UDP,3306;139;110;139;53;8080,webadmin119,changeme2024,/admin,scan_probe,-36.868776,86.790044,scan detected
+2025-10-14T04:16:17.983303Z,port_scan,40,197.167.209.83,152.29.4.77,35795,0,TCP,110;53;21;80,admin83,Welcome1!,/checkout,scan_probe,-50.448906,-80.778485,scan detected
+2025-10-06T07:07:28.983303Z,web_unauthorized_access,88,163.3.39.185,250.123.97.163,10587,443,TCP,0,ubuntu185,S3cure#63,/admin?role=admin,/admin?role=admin,-43.251704,-82.259493,Auth bypass pattern
+2025-10-11T23:30:53.983303Z,ssh_bruteforce,77,171.195.145.2,55.203.119.124,48868,22,TCP,0,test,password123,/index.php,ssh_attempt,67.299753,-128.929963,failed login
+2025-10-06T20:13:59.983303Z,web_request_smuggling,68,153.177.29.136,236.7.236.58,59273,443,HTTP,0,user136,Passw0rd!,/,SMUGGLE_PAYLOAD,60.655954,-59.050633,Request smuggling pattern
+2025-10-13T18:39:43.983303Z,web_directory_traversal,68,151.123.83.176,241.127.192.199,50725,80,TCP,0,user176,Passw0rd!,/view?file=../..//etc/shadow,../..//etc/shadow,64.024681,-146.839776,Directory traversal attempt
+2025-10-03T19:56:56.983303Z,mass_scan,40,6.232.140.182,47.135.189.53,43343,0,UDP,110;80;8080,webadmin182,S3cure#80,/checkout,scan_probe,50.983086,129.106956,zmap result
+2025-10-17T22:36:19.983303Z,web_file_inclusion,88,185.207.143.97,53.128.135.50,65185,443,TCP,0,admin97,Admin123!,../../vulnerable.php?file=../../etc/passwd,../../vulnerable.php?file=../../etc/passwd,-9.386147,-4.846956,Local file inclusion attempt
+2025-10-10T11:14:26.983303Z,web_xss,78,157.83.61.148,26.88.35.168,37328,443,HTTP,0,ubuntu148,Welcome1!,/checkout?q=test,<script>alert(1)</script>,-16.348627,-116.008663,XSS attempt
+2025-10-12T22:18:37.983303Z,web_unauthorized_access,88,4.103.6.234,74.187.94.240,27796,443,HTTP,0,svc234,S3cure#22,/admin?role=admin,/admin?role=admin,-56.092153,-172.122407,Auth bypass pattern
+2025-10-21T23:07:40.983303Z,ssh_bruteforce,70,48.142.205.42,177.218.228.167,15509,22,TCP,0,user,letmein,/search?q=test,ssh_attempt,43.086408,-43.504848,multiple failures
+2025-10-21T01:26:50.983303Z,ssh_bruteforce,70,215.227.148.233,160.224.197.238,3652,22,TCP,0,ubuntu,letmein,/index.php,ssh_attempt,14.577368,6.840728,multiple failures
+2025-10-09T02:30:56.983303Z,web_cmd_injection,100,190.221.37.117,111.133.239.155,21706,443,HTTP,0,svc117,changeme2024,/exec?cmd=ls,&& ls -la,-42.17555,-83.527917,Command injection attempt
+2025-10-05T23:35:01.983303Z,web_auth_bypass,88,204.181.122.14,118.219.93.14,56254,80,TCP,0,admin14,letmein2024,/login?user=admin&pass=,/login?user=admin&pass=,-49.08061,91.424759,Auth bypass pattern
+2025-10-31T15:08:07.983303Z,web_cmd_injection,100,83.116.175.77,170.8.4.10,17973,443,HTTP,0,user77,changeme2024,/exec?cmd=ls,;cat /etc/passwd,-27.945867,152.793294,Command injection attempt
+2025-10-28T18:31:05.983303Z,web_auth_bypass,88,133.181.116.242,91.90.95.27,20805,443,TCP,0,webadmin242,S3cure#39,/admin?role=admin,/admin?role=admin,37.029282,-97.907023,Auth bypass pattern
+2025-10-24T06:11:31.983303Z,ssh_bruteforce,77,27.100.24.215,74.111.131.96,37805,22,TCP,0,test,1234,/upload,ssh_attempt,34.564605,-42.30628,failed login
+2025-10-13T06:48:36.983303Z,recon_scan,40,55.193.237.94,31.150.72.225,56757,0,TCP,80;3306;23;8080,ubuntu94,Welcome1!,/login,scan_probe,-50.062279,-149.472811,nmap-like probe
+2025-10-08T03:56:44.983303Z,web_directory_traversal,68,99.214.49.167,35.158.90.74,16746,80,HTTP,0,user167,P@ssw0rd,/view?file=..\..\..\windows\system32\cmd.exe,..\..\..\windows\system32\cmd.exe,-13.528361,-23.004267,Directory traversal attempt
+2025-10-30T16:41:07.983303Z,web_auth_bypass,88,150.190.136.186,197.30.15.52,11162,443,HTTP,0,user186,S3cure#45,/login?user=admin&pass=,/login?user=admin&pass=,6.264166,82.715004,Auth bypass pattern
+2025-10-22T12:03:42.983303Z,ssh_bruteforce,70,249.178.12.56,148.248.130.59,62102,22,TCP,0,admin,admin,/api/v1/login,ssh_attempt,-21.893763,-29.978783,multiple failures
+2025-10-25T23:56:15.983303Z,web_abnormal_request,68,122.240.120.28,30.178.8.208,15401,80,HTTP,0,admin28,Passw0rd!,/weird18,/%2e%2e/%2e%2e/..,-53.757387,161.760262,Abnormal request pattern
+2025-10-12T18:05:45.983303Z,web_path_traversal,68,174.241.138.200,253.250.10.109,63258,443,TCP,0,webadmin200,qwerty!23,/view?file=../../../../etc/passwd,../../../../etc/passwd,18.024148,138.674253,Directory traversal attempt
+2025-10-13T07:30:50.983303Z,ssh_bruteforce,70,114.177.222.196,107.245.141.168,43876,22,TCP,0,test,admin,/search?q=test,ssh_attempt,12.977348,-60.963219,multiple failures
+2025-10-14T06:25:57.983303Z,web_auth_bypass,88,105.49.151.199,96.221.241.86,37932,80,HTTP,0,webadmin199,qwerty!23,/admin?role=admin,/admin?role=admin,27.807929,61.900018,Auth bypass pattern
+2025-10-17T15:56:39.983303Z,web_xss,73,196.75.40.56,178.57.189.231,44455,80,HTTP,0,webadmin56,changeme2024,/product?id=1?q=test,<img src=x onerror=alert(1)>,66.003216,-29.552229,XSS attempt
+2025-10-20T10:17:45.983303Z,mass_scan,40,254.97.209.168,95.86.219.49,13200,0,UDP,53;110;53;3389;110;23,ubuntu168,Admin123!,/api/v1/login,scan_probe,34.0866,-39.099383,nmap-like probe
+2025-10-27T16:06:53.983303Z,web_cmd_injection,100,234.243.142.89,53.153.195.241,40973,80,HTTP,0,webadmin89,S3cure#16,/exec?cmd=ls,;cat /etc/passwd,-4.695183,89.218919,Command injection attempt
+2025-10-25T07:00:11.983303Z,web_file_upload,83,118.89.180.107,151.128.16.97,64638,443,TCP,0,guest107,letmein2024,/upload,/upload.php?file=malware.php,46.811556,-22.5736,Suspicious file upload
+2025-10-14T16:31:41.983303Z,port_scan,40,48.252.50.140,76.144.166.226,11197,0,UDP,80;5900;443,webadmin140,Welcome1!,/login,scan_probe,22.554095,-52.907905,nmap-like probe
+2025-10-19T19:40:10.983303Z,ssh_bruteforce,70,203.169.69.59,67.253.179.108,30161,22,TCP,0,admin,1234,/api/v1/login,ssh_attempt,42.113302,-149.059844,multiple failures
+2025-10-17T22:56:26.983303Z,web_file_upload,83,237.215.147.174,188.190.128.12,22920,443,TCP,0,svc174,Passw0rd!,/upload,/upload.php - multipart with php payload,-9.968768,89.204368,Suspicious file upload
+2025-10-13T13:40:58.983303Z,ssh_bruteforce,77,31.161.61.181,198.218.12.192,52981,22,TCP,0,user,pass,/checkout,ssh_attempt,20.165811,114.292507,successful login (rare)
+2025-10-24T19:11:08.983303Z,web_path_traversal,68,101.34.142.211,160.228.252.24,63341,80,TCP,0,root211,Welcome1!,/view?file=..\..\..\windows\system32\cmd.exe,..\..\..\windows\system32\cmd.exe,68.324116,14.120065,Directory traversal attempt
+2025-10-07T19:53:42.983303Z,web_request_smuggling,68,252.251.170.199,121.47.131.182,6566,443,HTTP,0,ubuntu199,Admin123!,/,SMUGGLE_PAYLOAD,33.803313,10.263965,Request smuggling pattern
+2025-10-08T17:52:59.983303Z,ssh_bruteforce,70,132.172.85.142,115.208.25.19,64555,22,TCP,0,test,letmein,/checkout,ssh_attempt,14.836188,-110.801215,multiple failures
+2025-10-06T10:02:20.983303Z,web_xss,78,253.134.155.112,134.24.158.69,52369,80,HTTP,0,svc112,changeme2024,/search?q=test,<script>alert(1)</script>,-50.604941,130.806878,XSS attempt
+2025-10-17T14:43:27.983303Z,ssh_bruteforce,77,130.163.112.49,45.3.169.122,17523,22,TCP,0,admin,pass,/product?id=1,ssh_attempt,36.639944,-116.335379,successful login (rare)
+2025-10-15T08:32:08.983303Z,web_request_smuggling,68,67.14.37.142,141.208.93.235,40431,443,TCP,0,admin142,letmein2024,/,SMUGGLE_PAYLOAD,-10.598388,137.982721,Request smuggling pattern
+2025-10-20T10:42:38.983303Z,web_request_smuggling,68,52.202.225.153,93.104.70.47,25357,443,HTTP,0,webadmin153,P@ssw0rd,/,SMUGGLE_PAYLOAD,41.960049,41.98542,Request smuggling pattern
+2025-10-18T05:21:59.983303Z,web_auth_bypass,88,228.236.88.66,86.126.44.157,4077,80,TCP,0,svc66,letmein2024,/login?user=admin&pass=,/login?user=admin&pass=,-56.529862,-93.081527,Auth bypass pattern
+2025-10-06T21:54:38.983303Z,web_xss,73,47.55.172.67,203.88.173.19,6230,443,TCP,0,webadmin67,Admin123!,/contact?q=test,<img src=x onerror=alert(1)>,-46.163277,40.633369,XSS attempt
+2025-10-14T07:37:27.983303Z,web_abnormal_request,68,130.160.79.16,251.122.185.194,42256,443,HTTP,0,guest16,changeme2024,/weird70,/%2e%2e/%2e%2e/..,-6.49893,16.953406,Abnormal request pattern
+2025-10-30T10:59:49.983303Z,web_file_inclusion,88,48.166.149.19,29.67.125.218,17489,443,HTTP,0,svc19,S3cure#33,../../vulnerable.php?file=../../etc/passwd,../../vulnerable.php?file=../../etc/passwd,-58.515767,97.134536,Local file inclusion attempt
+2025-10-11T21:42:17.983303Z,web_auth_bypass,88,145.238.195.16,150.5.63.99,63865,443,TCP,0,root16,Welcome1!,/login?user=admin&pass=,/login?user=admin&pass=,54.893629,-111.957907,Auth bypass pattern
+2025-10-21T22:15:25.983303Z,web_auth_bypass,88,10.229.71.26,26.91.199.145,34035,80,TCP,0,user26,S3cure#10,/admin?role=admin,/admin?role=admin,-48.330329,-125.893508,Auth bypass pattern
+2025-10-17T21:43:17.983303Z,web_auth_bypass,88,252.240.42.24,82.202.71.216,44868,80,HTTP,0,user24,changeme2024,/admin?role=admin,/admin?role=admin,2.676625,24.245632,Auth bypass pattern
+2025-10-06T21:28:43.983303Z,web_abnormal_request,68,60.163.8.24,171.238.132.8,59275,80,TCP,0,user24,S3cure#79,/weird77,/%00,-33.249803,-156.697832,Abnormal request pattern
+2025-10-08T10:58:53.983303Z,web_auth_bypass,88,241.24.158.248,140.185.58.39,16137,80,TCP,0,root248,letmein2024,/admin?role=admin,/admin?role=admin,69.830114,128.585742,Auth bypass pattern
+2025-10-14T05:34:12.983303Z,web_sql_injection,100,228.191.241.220,159.67.224.90,40758,80,TCP,0,webadmin220,S3cure#54,/product?id=1?id=1,' OR 1=1 --,6.416697,-74.668117,SQL injection payload detected
+2025-10-22T06:17:33.983303Z,web_sql_injection,100,53.171.224.79,95.182.187.199,26539,80,HTTP,0,webadmin79,changeme2024,/checkout?id=1,'; DROP TABLE users; --,-2.972563,-165.653024,SQL injection payload detected
+2025-10-16T16:55:23.983303Z,ssh_bruteforce,70,60.37.113.155,103.91.229.238,51217,22,TCP,0,ubuntu,letmein,/search?q=test,ssh_attempt,-16.410581,66.11228,multiple failures
+2025-10-07T00:43:43.983303Z,ssh_bruteforce,77,55.224.177.103,174.249.137.132,45263,22,TCP,0,test,pass,/index.php,ssh_attempt,12.948562,-17.402472,successful login (rare)
+2025-10-05T11:44:43.983303Z,web_file_inclusion,88,17.239.142.243,37.11.69.149,44627,80,HTTP,0,ubuntu243,changeme2024,/include.php?inc=../../config.php,/include.php?inc=../../config.php,20.357393,-112.481488,Local file inclusion attempt
+2025-10-16T10:35:11.983303Z,mass_scan,40,110.95.150.87,27.149.13.141,29367,0,TCP,80;53;53;445;445,user87,Welcome1!,/index.php,scan_probe,69.32278,-83.906513,nmap-like probe
+2025-10-28T13:59:52.983303Z,web_directory_traversal,68,34.87.200.187,143.52.61.34,3321,80,HTTP,0,ubuntu187,Welcome1!,/view?file=../../../../etc/passwd,../../../../etc/passwd,-29.057816,-177.524535,Directory traversal attempt
+2025-10-27T21:39:26.983303Z,web_request_smuggling,68,219.113.134.79,132.163.183.192,61783,443,HTTP,0,webadmin79,P@ssw0rd,/,SMUGGLE_PAYLOAD,-40.794969,70.753204,Request smuggling pattern
+2025-10-22T09:45:50.983303Z,web_file_upload,83,253.240.19.102,205.112.146.78,34416,443,TCP,0,webadmin102,P@ssw0rd,/upload,/upload.php?file=malware.php,57.058473,-138.152835,Suspicious file upload
+2025-10-09T23:45:45.983303Z,web_xss,78,226.129.96.17,87.150.66.121,29662,443,TCP,0,root17,letmein2024,/admin?q=test,<script>alert(1)</script>,14.882827,14.793579,XSS attempt
+2025-10-06T06:15:06.983303Z,web_request_smuggling,68,240.165.9.30,167.180.145.215,54912,80,TCP,0,ubuntu30,Passw0rd!,/,SMUGGLE_PAYLOAD,-53.78653,75.291695,Request smuggling pattern
+2025-10-27T14:29:22.983303Z,web_unauthorized_access,88,46.226.240.177,151.168.82.228,53174,443,TCP,0,user177,Passw0rd!,/admin?role=admin,/admin?role=admin,17.336211,-8.721571,Auth bypass pattern
+2025-10-29T12:01:18.983303Z,web_auth_bypass,88,107.195.233.56,1.64.143.128,50648,443,TCP,0,svc56,Welcome1!,/login?user=admin&pass=,/login?user=admin&pass=,17.741346,-1.124107,Auth bypass pattern
+2025-10-23T17:34:57.983303Z,web_xss,78,117.41.162.219,174.201.252.196,61852,443,TCP,0,user219,Passw0rd!,/upload?q=test,<script>alert(1)</script>,2.609523,-142.32224,XSS attempt
+2025-10-04T07:03:29.983303Z,recon_scan,40,20.39.225.64,70.65.142.246,52539,0,TCP,3306;445;80;1521;22,webadmin64,S3cure#34,/upload,scan_probe,-30.854849,144.468303,nmap-like probe
+2025-10-23T16:24:04.983303Z,web_xss,78,12.173.32.15,252.199.209.147,47376,443,TCP,0,user15,S3cure#60,/login?q=test,"""><script>alert(1)</script>",51.7473,-33.567012,XSS attempt
+2025-10-10T12:48:10.983303Z,mass_scan,35,43.181.99.83,58.248.56.202,50210,0,UDP,53,user83,changeme2024,/checkout,scan_probe,-15.39047,-14.304739,zmap result
+2025-10-11T02:25:05.983303Z,web_unauthorized_access,88,243.3.119.84,139.12.163.89,20568,80,TCP,0,svc84,qwerty!23,/login?user=admin&pass=,/login?user=admin&pass=,40.369856,-68.789911,Auth bypass pattern
+2025-10-24T00:00:17.983303Z,web_unauthorized_access,88,132.149.137.131,214.35.146.19,36911,80,TCP,0,guest131,changeme2024,/admin?role=admin,/admin?role=admin,11.508033,2.065091,Auth bypass pattern
+2025-10-24T03:58:31.983303Z,ssh_bruteforce,77,22.7.10.211,46.235.159.163,10848,22,TCP,0,root,1234,/product?id=1,ssh_attempt,-39.746898,-53.410347,failed login
+2025-10-14T11:33:01.983303Z,web_request_smuggling,68,205.216.64.110,252.147.69.4,3792,80,TCP,0,root110,P@ssw0rd,/,SMUGGLE_PAYLOAD,-48.223577,44.457775,Request smuggling pattern
+2025-10-12T14:53:31.983303Z,web_unauthorized_access,88,27.173.95.153,108.66.191.58,45927,80,HTTP,0,ubuntu153,changeme2024,/login?user=admin&pass=,/login?user=admin&pass=,-25.482883,67.604619,Auth bypass pattern
+2025-10-03T01:06:53.983303Z,web_file_upload,83,25.202.31.217,79.106.70.37,41400,80,HTTP,0,user217,letmein2024,/upload,/upload.php - multipart with php payload,-10.046974,132.802981,Suspicious file upload
+2025-10-07T15:54:00.983303Z,web_xss,73,204.82.250.104,53.106.109.160,40120,80,HTTP,0,guest104,qwerty!23,/product?id=1?q=test,<img src=x onerror=alert(1)>,-0.617739,127.903467,XSS attempt
+2025-10-23T20:05:41.983303Z,web_sql_injection,100,44.138.106.183,211.240.183.119,42011,443,HTTP,0,ubuntu183,changeme2024,/index.php?id=1,'; DROP TABLE users; --,-16.22151,-173.596978,SQL injection payload detected
+2025-10-31T03:39:14.983303Z,web_request_smuggling,68,208.180.92.211,253.186.213.91,34167,80,HTTP,0,ubuntu211,Welcome1!,/,SMUGGLE_PAYLOAD,-19.316675,-61.150523,Request smuggling pattern
+2025-10-15T09:48:20.983303Z,port_scan,40,91.180.68.251,137.232.15.87,52042,0,TCP,3389;23;1521;139,svc251,Passw0rd!,/upload,scan_probe,29.092737,-120.616671,mass scan
+2025-10-24T01:42:26.983303Z,web_cmd_injection,100,64.143.206.89,198.91.29.188,5164,443,TCP,0,guest89,changeme2024,/exec?cmd=ls,|| net user,22.014785,4.345117,Command injection attempt
+2025-10-17T15:08:05.983303Z,web_file_inclusion,88,253.156.154.115,131.214.103.230,47794,80,TCP,0,user115,S3cure#56,/include.php?inc=../../config.php,/include.php?inc=../../config.php,-38.971574,-122.265993,Local file inclusion attempt
+2025-10-08T21:55:02.983303Z,web_auth_bypass,88,247.42.34.124,81.91.165.57,44215,80,HTTP,0,webadmin124,letmein2024,/admin?role=admin,/admin?role=admin,-24.077059,95.761687,Auth bypass pattern
+2025-10-22T18:10:14.983303Z,ssh_bruteforce,77,241.134.112.57,223.227.105.136,12694,22,TCP,0,admin,letmein,/admin,ssh_attempt,18.715431,34.695459,successful login (rare)
+2025-10-15T00:10:38.983303Z,web_abnormal_request,68,80.120.137.35,105.240.150.47,2689,443,TCP,0,root35,changeme2024,/weird17,/%2e%2e/%2e%2e/..,27.95513,30.449133,Abnormal request pattern
+2025-10-13T20:52:58.983303Z,web_file_inclusion,88,150.148.67.78,164.35.136.164,18547,443,TCP,0,svc78,changeme2024,../../vulnerable.php?file=../../etc/passwd,../../vulnerable.php?file=../../etc/passwd,48.528684,-166.7012,Local file inclusion attempt
+2025-10-11T15:55:46.983303Z,web_xss,78,165.196.72.211,153.65.114.135,38041,443,HTTP,0,admin211,changeme2024,/checkout?q=test,"""><script>alert(1)</script>",-50.889094,-125.146683,XSS attempt
+2025-10-19T02:30:41.983303Z,web_file_upload,83,228.248.159.26,34.29.103.169,22507,80,HTTP,0,guest26,Admin123!,/upload,/upload.php - multipart with php payload,30.219368,36.856227,Suspicious file upload
+2025-10-02T07:43:19.983303Z,web_path_traversal,68,121.209.139.12,100.203.181.5,64964,443,TCP,0,user12,Passw0rd!,/view?file=../..//etc/shadow,../..//etc/shadow,-17.811848,-164.19111,Directory traversal attempt
+2025-10-03T21:02:08.983303Z,ssh_bruteforce,70,27.168.102.205,193.78.73.136,17980,22,TCP,0,user,pass,/index.php,ssh_attempt,12.361077,-173.298654,multiple failures
+2025-10-02T10:26:04.983303Z,web_directory_traversal,68,32.18.123.34,119.164.94.38,16085,443,HTTP,0,webadmin34,P@ssw0rd,/view?file=../..//etc/shadow,../..//etc/shadow,11.920203,-159.716907,Directory traversal attempt
+2025-10-09T11:33:54.983303Z,web_xss,78,99.133.177.165,66.31.210.84,28031,80,TCP,0,svc165,P@ssw0rd,/upload?q=test,<script>alert(1)</script>,13.94207,85.354346,XSS attempt
+2025-10-10T05:55:29.983303Z,recon_scan,35,218.92.64.243,151.243.45.198,59482,0,UDP,5900,root243,changeme2024,/checkout,scan_probe,0.562782,121.779225,scan detected
+2025-10-23T15:27:59.983303Z,web_file_inclusion,88,184.105.23.92,80.233.115.251,27874,80,HTTP,0,webadmin92,Passw0rd!,/include.php?inc=../../config.php,/include.php?inc=../../config.php,17.700815,7.472165,Local file inclusion attempt
+2025-10-08T13:09:11.983303Z,recon_scan,35,230.136.141.226,51.129.77.242,41230,0,TCP,445,admin226,Passw0rd!,/upload,scan_probe,61.32576,39.862283,scan detected
+2025-10-14T12:18:55.983303Z,web_xss,78,182.222.77.17,219.64.98.68,51997,80,TCP,0,guest17,Admin123!,/upload?q=test,<script>alert(1)</script>,59.778466,90.372933,XSS attempt
+2025-10-25T06:44:44.983303Z,web_xss,78,5.155.104.22,38.166.132.112,10569,80,TCP,0,svc22,P@ssw0rd,/admin?q=test,<script>alert(1)</script>,25.627036,152.870517,XSS attempt
+2025-10-29T18:43:13.983303Z,web_file_upload,83,178.44.118.210,142.156.253.100,39840,80,HTTP,0,svc210,letmein2024,/upload,/upload.php?file=malware.php,56.011476,105.845906,Suspicious file upload
+2025-10-06T12:08:42.983303Z,web_file_inclusion,88,239.174.41.107,24.77.174.22,46450,443,TCP,0,user107,Welcome1!,../../vulnerable.php?file=../../etc/passwd,../../vulnerable.php?file=../../etc/passwd,53.157402,-29.628324,Local file inclusion attempt
+2025-10-31T14:24:45.983303Z,web_directory_traversal,68,101.31.102.245,49.82.252.98,65188,443,HTTP,0,webadmin245,S3cure#89,/view?file=../..//etc/shadow,../..//etc/shadow,65.938472,-71.55263,Directory traversal attempt
+2025-10-28T03:45:22.983303Z,web_file_upload,83,45.248.105.211,121.232.78.158,1645,80,HTTP,0,admin211,P@ssw0rd,/upload,/upload.php?file=malware.php,42.960714,101.230866,Suspicious file upload
+2025-10-08T12:01:35.983303Z,web_directory_traversal,68,192.212.28.100,235.234.146.15,17426,80,TCP,0,guest100,qwerty!23,/view?file=../..//etc/shadow,../..//etc/shadow,19.355023,-70.074503,Directory traversal attempt
+2025-10-18T21:43:01.983303Z,ssh_bruteforce,77,196.18.131.90,43.180.112.16,9655,22,TCP,0,root,letmein,/index.php,ssh_attempt,50.393757,36.765938,failed login
+2025-10-18T20:14:26.983303Z,web_request_smuggling,68,26.202.114.215,4.186.87.124,34188,80,HTTP,0,root215,Welcome1!,/,SMUGGLE_PAYLOAD,39.567854,53.870767,Request smuggling pattern
+2025-10-06T23:26:23.983303Z,recon_scan,35,207.219.69.240,253.66.200.254,20590,0,TCP,21;21,svc240,Admin123!,/search?q=test,scan_probe,11.930709,118.860483,scan detected
+2025-10-03T00:33:15.983303Z,web_unauthorized_access,88,110.8.201.114,60.96.227.233,18222,443,HTTP,0,user114,Welcome1!,/login?user=admin&pass=,/login?user=admin&pass=,-34.225775,127.370779,Auth bypass pattern
+2025-10-11T20:30:29.983303Z,web_unauthorized_access,88,26.40.117.59,110.177.74.217,9509,443,HTTP,0,guest59,P@ssw0rd,/login?user=admin&pass=,/login?user=admin&pass=,-25.137424,59.653949,Auth bypass pattern
+2025-10-09T13:41:12.983303Z,web_cmd_injection,100,59.241.246.148,201.122.213.166,54435,443,HTTP,0,svc148,S3cure#30,/exec?cmd=ls,|| net user,54.876204,46.263086,Command injection attempt
+2025-10-26T09:04:21.983303Z,mass_scan,35,162.21.191.144,205.206.75.34,50443,0,TCP,3306;139,ubuntu144,Passw0rd!,/checkout,scan_probe,-8.339254,-133.439784,mass scan
+2025-10-15T23:54:39.983303Z,web_xss,78,101.49.58.115,128.100.181.16,14770,443,TCP,0,admin115,Passw0rd!,/api/v1/users?q=test,"""><script>alert(1)</script>",-7.769816,27.411056,XSS attempt
+2025-10-09T18:56:59.983303Z,web_path_traversal,68,220.49.2.114,223.137.136.241,32843,80,HTTP,0,ubuntu114,qwerty!23,/view?file=../..//etc/shadow,../..//etc/shadow,63.461647,-119.486917,Directory traversal attempt
+2025-10-02T09:58:09.983303Z,web_sql_injection,100,154.104.159.224,83.1.127.223,18275,443,TCP,0,ubuntu224,S3cure#90,/search?id=1,'; DROP TABLE users; --,0.343151,-169.420874,SQL injection payload detected
+2025-10-23T16:16:04.983303Z,web_request_smuggling,68,119.150.191.138,72.206.238.54,62052,80,TCP,0,admin138,letmein2024,/,SMUGGLE_PAYLOAD,-32.730229,178.964754,Request smuggling pattern
+2025-10-08T16:06:27.983303Z,web_auth_bypass,88,126.179.45.202,138.161.41.132,46788,443,HTTP,0,user202,Admin123!,/login?user=admin&pass=,/login?user=admin&pass=,51.687125,-35.628772,Auth bypass pattern
+2025-10-05T00:00:18.983303Z,web_path_traversal,68,35.10.180.80,148.146.3.214,56266,80,HTTP,0,ubuntu80,changeme2024,/view?file=../..//etc/shadow,../..//etc/shadow,67.281463,98.917447,Directory traversal attempt
+2025-10-12T19:42:56.983303Z,web_path_traversal,68,186.45.71.244,82.64.60.204,18865,80,TCP,0,user244,Admin123!,/view?file=../../../../etc/passwd,../../../../etc/passwd,-9.141315,-151.924451,Directory traversal attempt
+2025-10-31T18:01:59.983303Z,web_directory_traversal,68,193.86.188.169,141.135.136.13,9361,80,TCP,0,guest169,Passw0rd!,/view?file=../../../../etc/passwd,../../../../etc/passwd,25.396765,79.480364,Directory traversal attempt
+2025-10-09T14:11:44.983303Z,web_file_upload,83,27.111.59.44,7.50.210.26,64218,443,HTTP,0,guest44,S3cure#55,/upload,/upload.php?file=malware.php,69.637743,28.535649,Suspicious file upload
+2025-10-10T12:58:14.983303Z,web_sql_injection,100,43.86.42.215,170.175.25.90,9355,443,TCP,0,guest215,S3cure#13,/product?id=1?id=1,admin' --,-37.211197,-41.857991,SQL injection payload detected
+2025-10-12T15:16:40.983303Z,port_scan,40,240.191.54.215,188.45.182.212,54064,0,TCP,8080;3306;143,ubuntu215,S3cure#77,/login,scan_probe,-27.628072,-87.02772,nmap-like probe
+2025-10-20T05:42:58.983303Z,web_directory_traversal,68,243.175.102.230,31.155.21.184,45818,80,TCP,0,user230,changeme2024,/view?file=../..//etc/shadow,../..//etc/shadow,-7.237932,9.111544,Directory traversal attempt
+2025-10-23T05:49:07.983303Z,ssh_bruteforce,77,136.193.117.106,240.32.1.32,48940,22,TCP,0,test,password123,/product?id=1,ssh_attempt,-25.880408,160.007746,successful login (rare)
+2025-10-27T02:39:37.983303Z,web_cmd_injection,100,204.96.193.161,176.76.151.231,25470,80,TCP,0,svc161,S3cure#85,/exec?cmd=ls,;cat /etc/passwd,64.485886,-71.380137,Command injection attempt
+2025-10-14T02:02:35.983303Z,web_file_inclusion,88,7.15.96.172,81.43.234.146,53453,80,TCP,0,ubuntu172,S3cure#63,../../vulnerable.php?file=../../etc/passwd,../../vulnerable.php?file=../../etc/passwd,62.399201,3.473711,Local file inclusion attempt
+2025-10-09T07:20:39.983303Z,web_sql_injection,100,40.157.99.250,33.104.101.207,36753,80,TCP,0,root250,S3cure#22,/api/v1/users?id=1,' UNION SELECT NULL--,-0.206309,-166.096546,SQL injection payload detected
+2025-10-06T17:55:50.983303Z,web_unauthorized_access,88,68.197.95.144,44.189.138.115,31812,443,HTTP,0,svc144,Welcome1!,/login?user=admin&pass=,/login?user=admin&pass=,50.542016,-72.750792,Auth bypass pattern
+2025-10-15T12:48:10.983303Z,ssh_bruteforce,77,12.98.95.31,180.160.5.28,47235,22,TCP,0,user,admin,/index.php,ssh_attempt,-11.384847,53.938189,successful login (rare)
+2025-10-17T01:58:06.983303Z,recon_scan,40,246.100.147.39,4.249.119.179,57683,0,TCP,21;110;8080;139,guest39,Admin123!,/product?id=1,scan_probe,35.649326,-161.368482,mass scan
+2025-10-03T19:38:35.983303Z,web_sql_injection,100,90.160.43.35,98.5.3.83,53101,443,HTTP,0,user35,P@ssw0rd,/api/v1/users?id=1,'; DROP TABLE users; --,-19.136419,121.151154,SQL injection payload detected
+2025-10-27T06:39:18.983303Z,port_scan,40,186.137.250.134,108.113.86.216,59178,0,UDP,5900;25;443;443;143,user134,Admin123!,/login,scan_probe,52.163446,130.14423,mass scan
+2025-10-24T21:10:21.983303Z,web_file_upload,83,71.43.68.215,143.127.48.254,57498,443,TCP,0,ubuntu215,Admin123!,/upload,/upload.php - multipart with php payload,64.190054,19.287859,Suspicious file upload
+2025-10-13T09:25:19.983303Z,web_cmd_injection,100,177.102.149.233,53.189.229.128,48454,80,HTTP,0,root233,Welcome1!,/exec?cmd=ls,;cat /etc/passwd,-47.095853,-82.022923,Command injection attempt
+2025-10-22T00:57:47.983303Z,port_scan,40,74.42.51.162,211.206.50.170,21406,0,UDP,139;21;3306;8080;22;139,root162,S3cure#72,/admin,scan_probe,-48.541357,92.891999,zmap result
+2025-10-06T23:27:16.983303Z,web_sql_injection,100,98.250.164.152,27.52.151.94,30044,80,TCP,0,svc152,letmein2024,/index.php?id=1,' UNION SELECT NULL--,-31.56941,-40.077928,SQL injection payload detected
+2025-10-17T18:40:13.983303Z,ssh_bruteforce,70,151.38.159.65,19.243.39.21,8799,22,TCP,0,admin,1234,/checkout,ssh_attempt,9.699329,120.013652,multiple failures
+2025-10-02T18:30:15.983303Z,web_path_traversal,68,232.133.205.59,247.40.181.70,29858,80,HTTP,0,root59,Welcome1!,/view?file=../..//etc/shadow,../..//etc/shadow,12.057162,-39.499703,Directory traversal attempt
+2025-10-18T01:21:00.983303Z,web_abnormal_request,68,151.72.72.143,185.61.91.159,50551,443,TCP,0,guest143,Passw0rd!,/weird95,/%00,-12.42326,171.015531,Abnormal request pattern
+2025-10-02T20:31:15.983303Z,web_auth_bypass,88,151.236.134.156,141.192.221.60,58838,80,TCP,0,admin156,letmein2024,/admin?role=admin,/admin?role=admin,21.317495,120.620063,Auth bypass pattern
+2025-10-18T12:12:33.983303Z,web_abnormal_request,68,155.230.57.45,79.78.118.55,29245,443,HTTP,0,webadmin45,P@ssw0rd,/weird100,/%2e%2e/%2e%2e/..,-34.909834,147.203339,Abnormal request pattern
+2025-10-18T07:12:35.983303Z,mass_scan,40,196.239.20.60,100.48.74.246,50452,0,TCP,53;139;139,ubuntu60,Passw0rd!,/api/v1/login,scan_probe,65.985898,170.296882,nmap-like probe
+2025-10-12T19:34:25.983303Z,web_abnormal_request,68,176.222.18.74,162.216.135.121,30722,80,TCP,0,admin74,Passw0rd!,/weird15,/big-request?size=999999999,-13.308394,122.454495,Abnormal request pattern
+2025-10-18T18:07:55.983303Z,web_auth_bypass,88,110.212.33.42,94.1.128.183,61164,443,HTTP,0,webadmin42,letmein2024,/admin?role=admin,/admin?role=admin,16.306345,-13.101972,Auth bypass pattern
+2025-10-21T04:06:59.983303Z,web_sql_injection,100,52.41.245.58,81.145.191.100,23852,80,TCP,0,ubuntu58,qwerty!23,/search?id=1,admin' --,-5.807804,101.343207,SQL injection payload detected
+2025-10-24T08:35:26.983303Z,ssh_bruteforce,77,157.162.27.32,66.129.145.72,63638,22,TCP,0,admin,admin,/api/v1/login,ssh_attempt,-50.100442,-124.423535,failed login
+2025-10-13T02:44:42.983303Z,web_file_upload,83,221.191.70.26,31.65.69.64,41760,80,HTTP,0,webadmin26,S3cure#17,/upload,/upload.php - multipart with php payload,-17.404799,-156.563367,Suspicious file upload
+2025-10-26T07:45:50.983303Z,web_xss,73,79.87.186.242,114.58.148.81,62976,443,TCP,0,guest242,Admin123!,/login?q=test,<img src=x onerror=alert(1)>,9.869006,77.953029,XSS attempt
+2025-10-24T10:43:46.983303Z,web_auth_bypass,88,40.64.240.177,230.246.134.128,29180,443,TCP,0,svc177,changeme2024,/login?user=admin&pass=,/login?user=admin&pass=,22.920161,52.297431,Auth bypass pattern
+2025-10-30T02:12:47.983303Z,mass_scan,40,136.69.195.88,94.86.164.143,23110,0,TCP,443;1521;110,webadmin88,P@ssw0rd,/index.php,scan_probe,56.397417,64.392035,nmap-like probe
+2025-10-11T12:51:29.983303Z,ssh_bruteforce,70,145.178.230.226,232.236.226.243,40337,22,TCP,0,user,1234,/checkout,ssh_attempt,-43.477698,-85.071374,multiple failures
+2025-10-17T07:35:25.983303Z,web_request_smuggling,68,142.94.240.22,42.81.146.110,21348,443,HTTP,0,guest22,S3cure#62,/,SMUGGLE_PAYLOAD,-24.390313,-148.41003,Request smuggling pattern
+2025-10-20T03:10:01.983303Z,ssh_bruteforce,77,84.176.79.222,181.165.206.59,11442,22,TCP,0,test,letmein,/admin,ssh_attempt,-14.628247,-55.866592,successful login (rare)
+2025-10-21T11:29:47.983303Z,web_request_smuggling,68,119.122.10.50,245.124.190.76,30307,80,TCP,0,webadmin50,Welcome1!,/,SMUGGLE_PAYLOAD,67.314456,20.548174,Request smuggling pattern
+2025-10-29T13:47:49.983303Z,web_file_upload,83,200.33.144.143,29.213.203.210,62127,80,TCP,0,root143,Welcome1!,/upload,/upload.php - multipart with php payload,42.014876,92.186944,Suspicious file upload
+2025-10-13T01:14:03.983303Z,web_unauthorized_access,88,29.2.50.54,125.213.69.54,40610,80,HTTP,0,root54,P@ssw0rd,/login?user=admin&pass=,/login?user=admin&pass=,9.200924,-52.725306,Auth bypass pattern
+2025-10-27T09:06:12.983303Z,recon_scan,40,86.62.153.5,29.62.45.218,44751,0,TCP,22;23;445;25;22,root5,Welcome1!,/checkout,scan_probe,9.184642,129.669594,zmap result
+2025-10-19T12:52:49.983303Z,web_file_upload,83,153.25.242.242,183.214.128.196,47325,80,HTTP,0,webadmin242,S3cure#58,/upload,/upload.php - multipart with php payload,6.542078,-174.527751,Suspicious file upload
+2025-10-24T19:46:22.983303Z,web_request_smuggling,68,250.152.140.228,95.112.189.22,37166,443,TCP,0,svc228,qwerty!23,/,SMUGGLE_PAYLOAD,-33.189827,34.049881,Request smuggling pattern
+2025-10-13T00:38:56.983303Z,mass_scan,40,173.238.55.3,194.24.152.6,50938,0,UDP,3389;3306;139;22;143,svc3,S3cure#31,/api/v1/login,scan_probe,-32.702074,119.395223,mass scan
+2025-10-26T11:13:35.983303Z,web_file_upload,83,171.134.189.87,59.82.152.103,59750,80,TCP,0,user87,Admin123!,/upload,/upload.php - multipart with php payload,41.824766,-164.929939,Suspicious file upload
+2025-10-02T00:12:13.983303Z,port_scan,40,71.26.193.203,174.153.117.26,7769,0,UDP,22;443;3306;25,ubuntu203,P@ssw0rd,/api/v1/login,scan_probe,27.610618,23.965183,scan detected
+2025-10-16T12:16:02.983303Z,web_request_smuggling,68,10.237.45.229,231.66.219.210,54601,80,HTTP,0,ubuntu229,P@ssw0rd,/,SMUGGLE_PAYLOAD,-21.254038,-93.999398,Request smuggling pattern
+2025-10-11T01:38:21.983303Z,web_request_smuggling,68,254.130.63.34,164.68.196.193,26496,443,HTTP,0,webadmin34,changeme2024,/,SMUGGLE_PAYLOAD,-50.854739,68.111692,Request smuggling pattern
+2025-10-20T18:42:19.983303Z,web_cmd_injection,100,192.128.237.248,46.112.3.42,3952,80,HTTP,0,guest248,Welcome1!,/exec?cmd=ls,|| net user,61.26997,31.38412,Command injection attempt
+2025-10-30T11:36:08.983303Z,web_unauthorized_access,88,234.74.74.223,123.160.80.244,61373,80,TCP,0,root223,P@ssw0rd,/login?user=admin&pass=,/login?user=admin&pass=,-15.487489,15.483573,Auth bypass pattern
+2025-10-29T08:01:21.983303Z,web_unauthorized_access,88,160.231.76.73,119.172.82.58,50448,80,TCP,0,user73,qwerty!23,/admin?role=admin,/admin?role=admin,63.560848,-130.430321,Auth bypass pattern
+2025-10-23T10:30:44.983303Z,web_xss,78,137.178.85.40,87.186.171.72,6762,443,TCP,0,webadmin40,Welcome1!,/index.php?q=test,"""><script>alert(1)</script>",-3.651774,-30.876431,XSS attempt
+2025-10-17T04:28:37.983303Z,web_auth_bypass,88,21.198.171.235,225.139.65.103,8177,80,HTTP,0,user235,P@ssw0rd,/login?user=admin&pass=,/login?user=admin&pass=,13.007905,-114.062586,Auth bypass pattern
+2025-10-16T02:25:49.983303Z,web_xss,78,61.45.69.249,162.139.9.233,33073,80,TCP,0,root249,P@ssw0rd,/upload?q=test,"""><script>alert(1)</script>",67.483088,-30.253997,XSS attempt
+2025-10-16T16:16:56.983303Z,web_xss,73,11.28.60.94,243.224.221.153,53306,80,HTTP,0,webadmin94,Passw0rd!,/admin?q=test,<img src=x onerror=alert(1)>,-42.339659,-84.62025,XSS attempt
+2025-10-21T18:48:01.983303Z,web_abnormal_request,68,37.197.136.239,68.81.181.60,41666,80,TCP,0,svc239,S3cure#70,/weird86,/%2e%2e/%2e%2e/..,53.662917,-135.730356,Abnormal request pattern
+2025-10-02T14:54:15.983303Z,web_auth_bypass,88,64.165.216.176,142.40.215.124,46730,443,HTTP,0,user176,S3cure#63,/admin?role=admin,/admin?role=admin,69.876364,26.857539,Auth bypass pattern
+2025-10-04T05:34:16.983303Z,web_xss,78,245.107.137.162,169.218.87.232,4437,443,HTTP,0,webadmin162,letmein2024,/checkout?q=test,"""><script>alert(1)</script>",69.58195,-172.105123,XSS attempt
+2025-10-02T11:57:22.983303Z,ssh_bruteforce,77,11.73.17.193,206.127.20.127,52481,22,TCP,0,admin,password123,/api/v1/login,ssh_attempt,-33.37565,57.143315,successful login (rare)
