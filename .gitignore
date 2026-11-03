@@ -205,3 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Saved model files are produced by running the notebooks
+Heart_Disease_Prediction/models/
